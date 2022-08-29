@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section class="container">
+
+    <div class="main-content">
+
+      <div class="card-select">
+        <h3>Select a card payment method</h3>
+      </div>
+
+      <div class="payment-options">
+
+        <button>
+          <i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(2, 34,93)"
+              class="bi bi-credit-card" viewBox="0 0 16 16">
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z" />
+              <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z" />
+            </svg>
+          </i>
+          Credit-card
+        </button>
+
+        <button>
+          <img src="images/visa-card.svg" alt="">
+          Visa Card
+        </button>
+
+        <button>
+          <img src="images/master-card.svg" alt="">
+          Master Card
+        </button>
+
+      </div>
+
+      <div class="card-details">
+
+        <div>
+          <label for="card-no">Card no here:</label><br>
+          <input type="text" placeholder="1111-2222-3333" class="card-no">
+        </div>
+
+        <div>
+          <label for="cvc">CVC no:</label><br>
+          <input type="text" placeholder="111" class="cvc">
+        </div>
+
+        <div>
+          <label for="date">Expiration date:</label><br>
+          <input type="date" class="date">
+        </div>
+
+        <button type="submit" class="submit">Buy now</button>
+
+      </div>
+    </div>
+
+  </section>
+
+</body>
+<script src="app.js"></script>
+
+</html>

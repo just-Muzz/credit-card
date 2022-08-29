@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50rem;
+  padding: 15px;
+  margin-top: 5px;
+}
+
+.main-content div {
+  margin-bottom: 30px;
+}
+
+.card-select {
+  width: 100%;
+  background-color: rgb(2, 34, 93);
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-select h3 {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.payment-options {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+button {
+  background-color: white;
+  border: rgb(2, 34, 93) 2px solid;
+  width: 20%;
+  padding: 5px;
+  color: rgb(2, 34, 93);
+  font-size: 1rem;
+}
+
+button:hover,
+button svg:hover {
+  background-color: rgb(2, 34, 93);
+  border: none;
+  color: white;
+  fill: white;
+}
+
+.card-details {
+  width: 100%;
+  color: rgb(2, 34, 93);
+}
+
+.card-details input {
+  border: rgb(2, 34, 93) 2px solid;
+  width: 100%;
+  padding: 8px;
+}
+
+.card-details ::placeholder {
+  color: rgb(2, 34, 93);
+}
+
+input:focus {
+  border: rgb(2, 34, 93) 3px solid;
+  outline: none;
+}
