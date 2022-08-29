@@ -1,6 +1,7 @@
 const cardNo = document.querySelector(".card-no")
 const cvc = document.querySelector(".cvc")
 const date = document.querySelector(".date")
+const submit = document.querySelector(".submit")
 let inputHyphen;
 
 cardNo.focus()
@@ -29,4 +30,22 @@ cvc.addEventListener("keyup", function () {
   if (cvc.value.length > 2) {
     date.focus();
   }
+})
+
+date.addEventListener("keyup", function (e) {
+  const b = e.key;
+  if (b == "Backspace" || b == "Delete") {
+    return false;
+  }
+  else {
+    if (date.value.length == 2) {
+      insertSlash = date.value + "/";
+      date.value = insertSlash;
+    }
+
+    else if (date.value.length > 4) {
+      submit.focus();
+    }
+  }
+
 })

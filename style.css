@@ -55,11 +55,13 @@ button {
 }
 
 button:hover,
+button:focus,
 button svg:hover {
   background-color: rgb(2, 34, 93);
   border: none;
   color: white;
   fill: white;
+  outline: none;
 }
 
 .card-details {
