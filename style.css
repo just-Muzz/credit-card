@@ -59,7 +59,6 @@ button:focus,
 button svg:hover {
   background-color: rgb(2, 34, 93);
   color: white;
-  fill: white;
   outline: none;
 }
 
@@ -81,4 +80,16 @@ button svg:hover {
 input:focus {
   border: rgb(2, 34, 93) 3px solid;
   outline: none;
+}
+
+.submit {
+  background-color: rgb(2, 34, 93);
+  width: 100%;
+  color: white;
+}
+
+.submit:hover {
+  color: rgb(2, 34, 93);
+  width: 100%;
+  background-color: white;
 }
